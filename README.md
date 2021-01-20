@@ -41,17 +41,10 @@ pipenv install cookiecutter
 
 Generate a Cookiecutter Base project:
 
-    .. code-block:: bash
-
-> cookiecutter gh:hadenlabs/cookiecutter-terraform-module
-
-## Support
-
-If you want to support this project, i only accept `IOTA` :p.
-
 ```{.bash}
-Address: FTDCZELEMOQGL9MBWFZENJLFIZUBGMXLFVPRB9HTWYDYPTFKASJCEGJMSAXUWDQC9SJUDMZVIQKACQEEYPEUYLAMMD
+cookiecutter gh:hadenlabs/cookiecutter-terraform-module
 ```
+
 
 ## Team
 
