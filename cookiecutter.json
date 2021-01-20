@@ -1,0 +1,33 @@
+{
+  "author_email": "slovacus@gmail.com",
+  "author_linkedin": "https://pe.linkedin.com/in/luismayta",
+  "author_name": "Luis Mayta",
+  "author_pgp": "https://keybase.io/luismayta/pgp_keys.asc",
+  "author_repository_username": "luismayta",
+  "author_twitter": "https://twitter.com/slovacus",
+  "author_website": "https://luismayta.github.io",
+  "aws_vault": "hadenlabs",
+  "company_name": "hadenlabs",
+  "company_repository_username": "hadenlabs",
+  "node_version": "12.14.1",
+  "package_name": "name_terraform_module",
+  "project_description": "Project for terraform module",
+  "project_port": "3000",
+  "python_version": "3.8.0",
+  "release_date": "2021-01-20",
+  "repository": ["github", "bitbucket", "gitlab"],
+  "repository_domain": "https://github.com",
+  "repository_owner": "hadenlabs",
+  "use_docker": "true",
+  "version": "0.0.0",
+  "year": "2020",
+  "repository_name": "terraform-module-name",
+  "open_source_license": [
+    "MIT license",
+    "BSD license",
+    "ISC license",
+    "Apache Software License 2.0",
+    "GNU General Public License v3",
+    "Not open source"
+  ]
+}
