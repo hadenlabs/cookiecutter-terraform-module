@@ -1,0 +1,60 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: {{ cookiecutter.repository_name }}
+
+# Tags of this project
+tags:
+  - repository
+
+# Categories of this project
+categories:
+  - terraform-modules/github
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: 'Mit'
+
+# Canonical GitHub repo
+github_repo: {{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}
+
+# Badges to display
+badges:
+  - name: 'Build Status'
+    image: 'https://travis-ci.org/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}.svg?branch=main'
+    url: 'https://travis-ci.org/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}'
+  - name: 'Latest Release'
+    image: 'https://img.shields.io/github/release/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}.svg'
+    url: 'https://travis-ci.org/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}/releases'
+
+# Short description of this project
+description: |-
+  {{ cookiecutter.project_description }}
+
+# How to use this project
+usage: |-
+  ```hcl
+    module "main" {
+      source = "github.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}"
+
+      name        = "repository-example"
+
+    }
+  ```
+
+  Full working example can be found in [example](./example) folder.
+
+include:
+  - 'docs/include/targets.md'
+  - 'docs/include/terraform.md'
+
+# Contributors to this project
+contributors:
+  - name: '{{ cookiecutter.author_name }}'
+    github: '{{ cookiecutter.repository_user_name }}'
