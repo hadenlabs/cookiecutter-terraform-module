@@ -16,19 +16,19 @@ categories:
   - terraform-modules/github
 
 company:
-  name: hadenlabs
+  name: {{ cookiecutter.copyright_name }}
   description: |-
     company labs
-  url: https://hadenlabs.com
-  github: https://github.com/hadenlabs
-  email: support@hadenlbas.com
+  url: {{ cookiecutter.copyright_url }}
+  github: {{ cookiecutter.copyright_github }}
+  email: {{ cookiecutter.copyright_email }}
 
 copyright:
-  name: Hadenlabs
-  url: https://hadenlabs.com
+  name:{{ cookiecutter.copyright_name }}
+  url: {{ cookiecutter.copyright_url }}
 
 email:
-  support: support@hadenlabs.com
+  support: {{ cookiecutter.email_support }}
 
 # Logo for this project
 #logo: docs/logo.png
