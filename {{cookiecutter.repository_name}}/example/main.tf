@@ -1,5 +1,10 @@
-terraform {
-  required_version = ">=0.13.0"
+locals {
+  tags = {
+    terraform_id = var.namespace
+    Namespace    = var.namespace
+    Environment  = var.stage
+    Stage        = var.stage
+  }
 }
 
 module "main" {
