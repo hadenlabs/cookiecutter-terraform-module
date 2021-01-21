@@ -15,11 +15,26 @@ tags:
 categories:
   - terraform-modules/github
 
+company:
+  name: hadenlabs
+  description: |-
+    company labs
+  url: https://hadenlabs.com
+  github: https://github.com/hadenlabs
+  email: support@hadenlbas.com
+
+copyright:
+  name: Hadenlabs
+  url: https://hadenlabs.com
+
+email:
+  support: support@hadenlabs.com
+
 # Logo for this project
 #logo: docs/logo.png
 
 # License of this project
-license: 'Mit'
+license: 'Apache2'
 
 # Canonical GitHub repo
 github_repo: {{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}
