@@ -72,4 +72,4 @@ include:
 # Contributors to this project
 contributors:
   - name: '{{ cookiecutter.author_name }}'
-    github: '{{ cookiecutter.repository_user_name }}'
+    github: '{{ cookiecutter.author_repository_username }}'

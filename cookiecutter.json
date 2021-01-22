@@ -11,7 +11,6 @@
   "copyright_email": "support@hadenlabs.com",
   "email_support": "support@hadenlabs.com",
   "node_version": "12.14.1",
-  "package_name": "name_terraform_module",
   "project_description": "Project for terraform module",
   "project_port": "3000",
   "python_version": "3.8.0",
