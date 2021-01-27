@@ -9,3 +9,4 @@ coverage
 .mypy_cache/
 .build
 CHANGELOG.tpl.md
+{{cookiecutter.repository_name}}/
