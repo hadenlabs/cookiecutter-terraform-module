@@ -1,1 +1,1 @@
-# Welcome to terraform-github-repository documentation
+# Welcome to cookiecutter-terraform-module documentation
