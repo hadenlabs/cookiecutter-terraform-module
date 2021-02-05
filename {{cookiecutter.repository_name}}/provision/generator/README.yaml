@@ -24,7 +24,7 @@ company:
   email: {{ cookiecutter.copyright_email }}
 
 copyright:
-  name:{{ cookiecutter.copyright_name }}
+  name: {{ cookiecutter.copyright_name }}
   url: {{ cookiecutter.copyright_url }}
 
 email:
@@ -34,7 +34,7 @@ email:
 #logo: docs/logo.png
 
 # License of this project
-license: 'Apache2'
+license: 'APACHE2'
 
 # Canonical GitHub repo
 github_repo: {{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}
