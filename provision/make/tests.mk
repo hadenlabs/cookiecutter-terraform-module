@@ -16,6 +16,7 @@ test:
 	fi
 
 test.lint:
+	@echo $(MESSAGE) Running validator for pre-commit $(END)
 	$(PIPENV_RUN) pre-commit run --all-files --verbose
 
 test.syntax:

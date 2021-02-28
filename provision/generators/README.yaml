@@ -1,0 +1,74 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: cookiecutter-terraform-module
+
+company:
+  name: hadenlabs
+  description: |-
+    company labs
+  url: https://hadenlabs.com
+  github: https://github.com/hadenlabs
+  email: support@hadenlabs.com
+
+copyright:
+  name: Hadenlabs
+  url: https://hadenlabs.com
+
+email:
+  support: support@hadenlabs.com
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: 'MIT'
+
+# Canonical GitHub repo
+github_repo: hadenlabs/cookiecutter-terraform-module
+
+# Badges to display
+badges:
+  - name: 'Build Status'
+    image: 'https://travis-ci.org/hadenlabs/cookiecutter-terraform-module.svg?branch=main'
+    url: 'https://travis-ci.org/hadenlabs/cookiecutter-terraform-module'
+  - name: 'Issues'
+    image: 'https://img.shields.io/github/issues/hadenlabs/cookiecutter-terraform-module.svg'
+    url: 'https://github.com/hadenlabs/cookiecutter-terraform-module/issues'
+  - name: 'Latest Release'
+    image: 'https://img.shields.io/github/release/hadenlabs/cookiecutter-terraform-module.svg'
+    url: 'https://travis-ci.org/hadenlabs/cookiecutter-terraform-module/releases'
+  - name: 'Beacon'
+    image: 'https://ga-beacon.appspot.com/UA-65019326-1/github.com/hadenlabs/cookiecutter-terraform-module/readme'
+    url: 'https://github.com/hadenlabs/cookiecutter-terraform-module'
+
+# Short description of this project
+description: |-
+  cookiecutter-terraform-module for generate terraform module.
+
+requirements: |-
+
+  List of applications:
+
+  - [Pyenv](https://github.com/pyenv/pyenv)
+  - [Docker](https://www.docker.com/)
+
+installation:
+  - 'docs/include/installation/pip.md'
+  - 'docs/include/installation/homebrew.md'
+  - 'docs/include/installation/pipenv.md'
+
+# How to use this project
+usage: |-
+  ```bash
+  cookiecutter gh:hadenlabs/cookiecutter-terraform-module
+  ```
+
+# Contributors to this project
+contributors:
+  - name: 'Luis Mayta'
+    github: 'luismayta'

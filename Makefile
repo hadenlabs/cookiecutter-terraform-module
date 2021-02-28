@@ -26,7 +26,7 @@ PROJECT := cookiecutter-terraform-module
 PROJECT_PORT := 3000
 
 PYTHON_VERSION=3.8.0
-NODE_VERSION=12.14.1
+NODE_VERSION=14.15.5
 PYENV_NAME="${PROJECT}"
 
 # Configuration.
@@ -40,7 +40,7 @@ DOCS_DIR:=$(ROOT_DIR)/docs
 README_TEMPLATE:=$(PROVISION_DIR)/templates/README.md.gotmpl
 
 export README_FILE ?= README.md
-export README_YAML ?= provision/generator/README.yaml
+export README_YAML ?= provision/generators/README.yaml
 export README_INCLUDES ?= $(file://$(shell pwd)/?type=text/plain)
 
 FILE_README:=$(ROOT_DIR)/README.md
