@@ -29,6 +29,8 @@ pygments = "*"
 pymdown-extensions = "*"
 mkdocs-material = "*"
 checkov = "*"
+sh = "*"
+binaryornot = "*"
 
 [packages]
 
