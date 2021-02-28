@@ -65,6 +65,9 @@ usage: |-
 
   Full working example can be found in [example](./example) folder.
 
+examples:
+  - 'docs/examples/common.md'
+
 include:
   - 'docs/include/targets.md'
   - 'docs/include/terraform.md'
