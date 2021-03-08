@@ -16,8 +16,7 @@ extra:
     text: 'Source Sans Pro'
 
 repo_name: '{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}'
-repo_url: '{{ cookiecutter.repository_domain }}/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}'
-copyright: 'Copyright © {{ cookiecutter.year }} <a href="https://hadenlabs.com">{{ cookiecutter.company_name }}</a>'
+repo_url: 'https://github.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}'
 
 google_analytics:
   - ''
