@@ -33,7 +33,7 @@ badges:
 
 # Short description of this project
 description: |-
-  {{ cookiecutter.project_description }}
+  {{ cookiecutter.description }}
 
 # How to use this project
 usage: |-
@@ -47,9 +47,6 @@ usage: |-
   ```
 
   Full working example can be found in [example](./example) folder.
-
-examples:
-  - 'docs/examples/common.md'
 
 include:
   - 'docs/include/targets.md'
