@@ -1,12 +1,11 @@
 {
-  "project_description": "terraform module",
   "repository_name": "terraform-module-name",
+  "description": "terraform module",
   "repository_owner": "hadenlabs",
   "author_email": "slovacus@gmail.com",
   "author_name": "Luis Mayta",
   "email_support": "support@hadenlabs.com",
   "node_version": "14.15.5",
-  "project_port": "3000",
   "python_version": "3.8.0",
   "repository": ["github", "bitbucket", "gitlab"],
   "use_docker": "true",
