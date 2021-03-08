@@ -1,11 +1,27 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/terraform,python,node,ansible,bash
-# Edit at https://www.toptal.com/developers/gitignore?templates=terraform,python,node,ansible,bash
+# Created by https://www.toptal.com/developers/gitignore/api/python,node,go,zsh
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,node,go,zsh
 
-### Ansible ###
-*.retry
+### Go ###
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
 
-#!! ERROR: bash is undefined. Use list command to see defined gitignore types !!#
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+### Go Patch ###
+/vendor/
+/Godeps/
 
 ### Node ###
 # Logs
@@ -63,6 +79,9 @@ typings/
 # Optional eslint cache
 .eslintcache
 
+# Optional stylelint cache
+.stylelintcache
+
 # Microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/
@@ -81,9 +100,11 @@ typings/
 # dotenv environment variables file
 .env
 .env.test
+.env*.local
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
+.parcel-cache
 
 # Next.js build output
 .next
@@ -123,7 +144,6 @@ __pycache__/
 *$py.class
 
 # C extensions
-*.so
 
 # Distribution / packaging
 .Python
@@ -168,6 +188,7 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
+pytestdebug.log
 
 # Translations
 *.mo
@@ -187,6 +208,7 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+doc/_build/
 
 # PyBuilder
 target/
@@ -225,6 +247,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+pythonenv*
 
 # Spyder project settings
 .spyderproject
@@ -247,34 +270,36 @@ dmypy.json
 # pytype static type analyzer
 .pytype/
 
-### Terraform ###
-# Local .terraform directories
-**/.terraform/*
+# profiling data
+.prof
 
-# .tfstate files
-*.tfstate
-*.tfstate.*
+### Zsh ###
+# Zsh compiled script + zrecompile backup
+*.zwc
+*.zwc.old
 
-# Crash log files
-crash.log
+# Zsh completion-optimization dumpfile
+*zcompdump*
 
-# Ignore any .tfvars files that are generated automatically for each Terraform run. Most
-# .tfvars files are managed as part of configuration and so should be included in
-# version control.
-#
-# example.tfvars
+# Zsh zcalc history
+.zcalc_history
 
-# Ignore override files as they are usually used to override resources locally and so
-# are not checked in
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
+# A popular plugin manager's files
+._zinit
+.zinit_lstupd
 
-# Include override files you do wish to add to version control using negated pattern
-# !example_override.tf
+# zdharma/zshelldoc tool's files
+zsdoc/data
 
-# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
-# example: *tfplan*
+# robbyrussell/oh-my-zsh/plugins/per-directory-history plugin's files
+# (when set-up to store the history in the local directory)
+.directory_history
 
-# End of https://www.toptal.com/developers/gitignore/api/terraform,python,node,ansible,bash
+# MichaelAquilina/zsh-autoswitch-virtualenv plugin's files
+# (for Zsh plugins using Python)
+
+# Zunit tests' output
+/tests/_output/*
+!/tests/_output/.gitkeep
+
+# End of https://www.toptal.com/developers/gitignore/api/python,node,go,zsh
