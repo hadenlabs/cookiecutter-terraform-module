@@ -33,7 +33,6 @@ REPOSITORY_DOMAIN:=github.com
 REPOSITORY_OWNER:=${TEAM}
 AWS_VAULT ?= ${TEAM}
 PROJECT := {{ cookiecutter.repository_name }}
-PROJECT_PORT := {{ cookiecutter.project_port }}
 
 PYTHON_VERSION={{ cookiecutter.python_version }}
 NODE_VERSION={{ cookiecutter.node_version }}
@@ -86,10 +85,11 @@ help:
 	@make utils.help
 	@make python.help
 	@make yarn.help
+	@make terraform.help
 
 ## Create README.md by building it from README.yaml
 readme:
-	@make docs.terraform
+	@make terraform.docs
 	@gomplate --file $(README_TEMPLATE) \
 		--out $(README_FILE)
 
