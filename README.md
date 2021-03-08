@@ -18,11 +18,9 @@
 
 cookiecutter-terraform-module for generate terraform module.
 
-This project is part of our comprehensive [hadenlabs](https://hadenlabs.com) examples of readme.
-
 ## :page_facing_up: License
 
-MIT is an open-sourced software licensed under the [MIT license](LICENSE.md).
+cookiecutter-terraform-module is an open-sourced software licensed under the [MIT license](LICENSE.md).
 
 ## Requirements
 
@@ -75,8 +73,6 @@ Please use the [issue tracker](https://github.com/hadenlabs/cookiecutter-terrafo
 
 ### Developing
 
-If you are interested in being a contributor and want to get involved in developing this project or [help out](https://hadenlabs.com) with our other projects, we would love to hear from you! Shoot us an [email](mailto:support@hadenlabs.com).
-
 In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
 1.  **Fork** the repo on GitHub
@@ -99,10 +95,6 @@ Copyright © 2018-2021 [Hadenlabs](https://hadenlabs.com)
 
 All other trademarks referenced herein are the property of their respective owners.
 
-## About
-
-This project is maintained and funded by [Hadenlabs](https://hadenlabs.com). Like it? Please let us know at <support@hadenlabs.com>
-
-## Don't forget to 🌟 Star 🌟 the repo if you like this GitHub Action
+## Don't forget to 🌟 Star 🌟 the repo if you like cookiecutter-terraform-module
 
 [Your feedback is appreciated](https://github.com/hadenlabs/cookiecutter-terraform-module/issues)
