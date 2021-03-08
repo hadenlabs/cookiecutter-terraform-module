@@ -33,9 +33,9 @@ github_repo: hadenlabs/cookiecutter-terraform-module
 
 # Badges to display
 badges:
-  - name: 'Build Status'
-    image: 'https://travis-ci.org/hadenlabs/cookiecutter-terraform-module.svg?branch=main'
-    url: 'https://travis-ci.org/hadenlabs/cookiecutter-terraform-module'
+  - name: Lint
+    image: https://github.com/hadenlabs/cookiecutter-terraform-module/actions/workflows/lint.yml/badge.svg?branch=develop
+    url: https://github.com/hadenlabs/cookiecutter-terraform-module/actions
   - name: 'Issues'
     image: 'https://img.shields.io/github/issues/hadenlabs/cookiecutter-terraform-module.svg'
     url: 'https://github.com/hadenlabs/cookiecutter-terraform-module/issues'
@@ -68,7 +68,5 @@ usage: |-
   cookiecutter gh:hadenlabs/cookiecutter-terraform-module
   ```
 
-# Contributors to this project
-contributors:
-  - name: 'Luis Mayta'
-    github: 'luismayta'
+examples:
+  - 'docs/examples/common.md'
