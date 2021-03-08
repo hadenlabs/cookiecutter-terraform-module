@@ -7,26 +7,6 @@
 # Name of this project
 name: {{ cookiecutter.repository_name }}
 
-# Tags of this project
-tags:
-  - repository
-
-# Categories of this project
-categories:
-  - terraform-modules/github
-
-company:
-  name: {{ cookiecutter.copyright_name }}
-  description: |-
-    company labs
-  url: {{ cookiecutter.copyright_url }}
-  github: {{ cookiecutter.copyright_github }}
-  email: {{ cookiecutter.copyright_email }}
-
-copyright:
-  name: {{ cookiecutter.copyright_name }}
-  url: {{ cookiecutter.copyright_url }}
-
 email:
   support: {{ cookiecutter.email_support }}
 
@@ -34,19 +14,22 @@ email:
 #logo: docs/logo.png
 
 # License of this project
-license: 'APACHE2'
+license: 'MIT'
 
 # Canonical GitHub repo
 github_repo: {{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}
 
 # Badges to display
 badges:
-  - name: 'Build Status'
-    image: 'https://travis-ci.org/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}.svg?branch=main'
-    url: 'https://travis-ci.org/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}'
+  - name: Lint
+    image: 'https://github.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}actions/workflows/lint.yml/badge.svg?branch=develop'
+    url: 'https://github.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}/actions'
+  - name: 'Issues'
+    image: "https://img.shields.io/github/issues/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}.svg"
+    url: "https://github.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}/issues"
   - name: 'Latest Release'
     image: 'https://img.shields.io/github/release/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}.svg'
-    url: 'https://travis-ci.org/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}/releases'
+    url: 'https://github.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}/releases'
 
 # Short description of this project
 description: |-
@@ -72,7 +55,5 @@ include:
   - 'docs/include/targets.md'
   - 'docs/include/terraform.md'
 
-# Contributors to this project
-contributors:
-  - name: '{{ cookiecutter.author_name }}'
-    github: '{{ cookiecutter.author_repository_username }}'
+examples:
+  - 'docs/examples/common.md'
