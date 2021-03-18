@@ -37,6 +37,9 @@ PROJECT := {{ cookiecutter.repository_name }}
 PYTHON_VERSION={{ cookiecutter.python_version }}
 NODE_VERSION={{ cookiecutter.node_version }}
 PYENV_NAME="${PROJECT}"
+GIT_IGNORES:=python,node,go,terraform
+GI:=gi
+
 
 # Configuration.
 SHELL ?=/bin/bash
@@ -94,7 +97,7 @@ readme:
 		--out $(README_FILE)
 
 setup:
-	@echo "=====> install packages..."
+	@echo "==> install packages..."
 	make python.setup
 	make python.precommit
 	@cp -rf provision/git/hooks/prepare-commit-msg .git/hooks/
@@ -104,6 +107,6 @@ setup:
 	@echo ${MESSAGE_HAPPY}
 
 environment:
-	@echo "=====> loading virtualenv ${PYENV_NAME}..."
+	@echo "==> loading virtualenv ${PYENV_NAME}..."
 	make python.environment
 	@echo ${MESSAGE_HAPPY}

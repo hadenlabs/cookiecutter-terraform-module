@@ -37,6 +37,7 @@ description: |-
 
 # How to use this project
 usage: |-
+
   ```hcl
     module "main" {
       source = "github.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}"
@@ -44,13 +45,14 @@ usage: |-
       name        = "repository-example"
 
     }
+
   ```
 
   Full working example can be found in [example](./example) folder.
 
+examples:
+  - 'docs/examples/common.md'
+
 include:
   - 'docs/include/targets.md'
   - 'docs/include/terraform.md'
-
-examples:
-  - 'docs/examples/common.md'
