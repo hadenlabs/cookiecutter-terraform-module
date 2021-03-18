@@ -11,3 +11,4 @@ coverage
 .terraform
 *.tpl.md
 {{cookiecutter.repository_name}}/
+*.enc.yaml
