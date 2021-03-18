@@ -1,7 +1,7 @@
 {
+  "repository_owner": "hadenlabs",
   "repository_name": "terraform-module-name",
   "description": "terraform module",
-  "repository_owner": "hadenlabs",
   "author_email": "slovacus@gmail.com",
   "author_name": "Luis Mayta",
   "email_support": "support@hadenlabs.com",
@@ -10,7 +10,6 @@
   "repository": ["github", "bitbucket", "gitlab"],
   "use_docker": "true",
   "version": "0.0.0",
-  "year": "2021",
   "open_source_license": [
     "MIT license",
     "BSD license",
