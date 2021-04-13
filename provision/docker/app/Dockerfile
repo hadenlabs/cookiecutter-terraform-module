@@ -25,8 +25,6 @@ FROM python:3.8.0-slim
 
 ARG stage
 
-LABEL NAME cookiecutter-golang-project-app-$stage
-
 COPY --from=build /root/.local/share /root/.local/share
 COPY --from=build /root/.local/bin /root/.local/bin
 COPY --from=build /root/.local/lib /root/.local/lib
