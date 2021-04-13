@@ -14,7 +14,7 @@
 
 # cookiecutter-terraform-module
 
-[![Lint](https://github.com/hadenlabs/cookiecutter-terraform-module/actions/workflows/lint.yml/badge.svg?branch=develop)](https://github.com/hadenlabs/cookiecutter-terraform-module/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/cookiecutter-terraform-module.svg)](https://github.com/hadenlabs/cookiecutter-terraform-module/issues) [![Latest Release](https://img.shields.io/github/release/hadenlabs/cookiecutter-terraform-module.svg)](https://travis-ci.org/hadenlabs/cookiecutter-terraform-module/releases) [![Beacon](https://ga-beacon.appspot.com/UA-65019326-1/github.com/hadenlabs/cookiecutter-terraform-module/readme)](https://github.com/hadenlabs/cookiecutter-terraform-module)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/hadenlabs/cookiecutter-terraform-module.svg?label=latest&sort=semver)](https://github.com/hadenlabs/cookiecutter-terraform-module/releases) [![Lint](https://github.com/hadenlabs/cookiecutter-terraform-module/actions/workflows/lint.yml/badge.svg?branch=develop)](https://github.com/hadenlabs/cookiecutter-terraform-module/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/cookiecutter-terraform-module.svg)](https://github.com/hadenlabs/cookiecutter-terraform-module/issues) [![Latest Release](https://img.shields.io/github/release/hadenlabs/cookiecutter-terraform-module.svg)](https://github.com/hadenlabs/cookiecutter-terraform-module/releases) [![Beacon](https://ga-beacon.appspot.com/G-MZEK48EGE8/cookiecutter-terraform-module/readme)](https://github.com/hadenlabs/cookiecutter-terraform-module)
 
 cookiecutter-terraform-module for generate terraform module.
 
@@ -59,7 +59,7 @@ cookiecutter gh:hadenlabs/cookiecutter-terraform-module
 
 **Got a question?**
 
-File a GitHub [issue](https://github.com/hadenlabs/cookiecutter-terraform-module/issues), send us an [email](email) or join our [Slack Community](slack).
+File a GitHub [issue](https://github.com/hadenlabs/cookiecutter-terraform-module/issues).
 
 ## Contributing
 
@@ -79,9 +79,20 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
 **NOTE:** Be sure to rebase the latest changes from "upstream" before making a pull request!
 
-#### Versioning
+## Module Versioning
 
-Releases are managed using github release feature. We use [Semantic Versioning](http://semver.org) for all the releases. Every change made to the code base will be referred to in the release notes (except for cleanups and refactorings).
+This Module follows the principles of [Semantic Versioning (SemVer)](https://semver.org/).
+
+Using the given version number of `MAJOR.MINOR.PATCH`, we apply the following constructs:
+
+1. Use the `MAJOR` version for incompatible changes.
+1. Use the `MINOR` version when adding functionality in a backwards compatible manner.
+1. Use the `PATCH` version when introducing backwards compatible bug fixes.
+
+### Backwards compatibility in `0.0.z` and `0.y.z` version
+
+- In the context of initial development, backwards compatibility in versions `0.0.z` is **not guaranteed** when `z` is increased. (Initial development)
+- In the context of pre-release, backwards compatibility in versions `0.y.z` is **not guaranteed** when `y` is increased. (Pre-release)
 
 ## Copyright
 
@@ -93,7 +104,7 @@ All other trademarks referenced herein are the property of their respective owne
 
 ## License
 
-The code and styles are licensed under the MIT license [See project license.](LICENSE).
+The code and styles are licensed under the LGPL-3.0 license [See project license.](LICENSE).
 
 ## Don't forget to 🌟 Star 🌟 the repo if you like cookiecutter-terraform-module
 
