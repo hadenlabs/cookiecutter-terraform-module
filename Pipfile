@@ -5,7 +5,6 @@ verify_ssl = true
 
 [dev-packages]
 docker-compose = "*"
-caniusepython3 = "*"
 isort = "*"
 mypy = "*"
 pycodestyle = "*"
