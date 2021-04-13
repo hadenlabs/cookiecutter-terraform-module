@@ -14,25 +14,28 @@ email:
 #logo: docs/logo.png
 
 # License of this project
-license: 'MIT'
+license: 'LGPL-3.0'
 
 # Canonical GitHub repo
 github_repo: hadenlabs/cookiecutter-terraform-module
 
 # Badges to display
 badges:
+  - name: GitHub tag (latest SemVer)
+    image: https://img.shields.io/github/v/tag/hadenlabs/cookiecutter-terraform-module.svg?label=latest&sort=semver
+    url: https://github.com/hadenlabs/cookiecutter-terraform-module/releases
   - name: Lint
     image: https://github.com/hadenlabs/cookiecutter-terraform-module/actions/workflows/lint.yml/badge.svg?branch=develop
     url: https://github.com/hadenlabs/cookiecutter-terraform-module/actions
-  - name: 'Issues'
-    image: 'https://img.shields.io/github/issues/hadenlabs/cookiecutter-terraform-module.svg'
-    url: 'https://github.com/hadenlabs/cookiecutter-terraform-module/issues'
-  - name: 'Latest Release'
-    image: 'https://img.shields.io/github/release/hadenlabs/cookiecutter-terraform-module.svg'
-    url: 'https://travis-ci.org/hadenlabs/cookiecutter-terraform-module/releases'
-  - name: 'Beacon'
-    image: 'https://ga-beacon.appspot.com/UA-65019326-1/github.com/hadenlabs/cookiecutter-terraform-module/readme'
-    url: 'https://github.com/hadenlabs/cookiecutter-terraform-module'
+  - name: Issues
+    image: https://img.shields.io/github/issues/hadenlabs/cookiecutter-terraform-module.svg
+    url: https://github.com/hadenlabs/cookiecutter-terraform-module/issues
+  - name: Latest Release
+    image: https://img.shields.io/github/release/hadenlabs/cookiecutter-terraform-module.svg
+    url: https://github.com/hadenlabs/cookiecutter-terraform-module/releases
+  - name: Beacon
+    image: https://ga-beacon.appspot.com/G-MZEK48EGE8/cookiecutter-terraform-module/readme
+    url: https://github.com/hadenlabs/cookiecutter-terraform-module
 
 # Short description of this project
 description: |-
