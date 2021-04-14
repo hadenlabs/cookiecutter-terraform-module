@@ -9,5 +9,5 @@ locals {
 
 module "main" {
   source = "git://{{cookiecutter.repository}}.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}.git?ref={{ cookiecutter.version }}"
-  name   = var.repository_name
+  name   = {{ cookiecutter.repository_name }}
 }
