@@ -14,22 +14,25 @@ email:
 #logo: docs/logo.png
 
 # License of this project
-license: 'MIT'
+license: 'LGPL-3.0'
 
 # Canonical GitHub repo
 github_repo: {{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}
 
 # Badges to display
 badges:
+  - name: GitHub tag (latest SemVer)
+    image: https://img.shields.io/github/v/tag/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}.svg?label=latest&sort=semver
+    url: https://github.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}/releases
   - name: Lint
-    image: 'https://github.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}actions/workflows/lint.yml/badge.svg?branch=develop'
-    url: 'https://github.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}/actions'
-  - name: 'Issues'
-    image: "https://img.shields.io/github/issues/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}.svg"
-    url: "https://github.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}/issues"
-  - name: 'Latest Release'
-    image: 'https://img.shields.io/github/release/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}.svg'
-    url: 'https://github.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}/releases'
+    image: https://github.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}/actions/workflows/lint.yml/badge.svg?branch=develop
+    url: https://github.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}/actions
+  - name: Issues
+    image: https://img.shields.io/github/issues/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}.svg
+    url: https://github.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}/issues
+  - name: Latest Release
+    image: https://img.shields.io/github/release/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}.svg
+    url: https://github.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}/releases
 
 # Short description of this project
 description: |-
@@ -41,14 +44,12 @@ usage: |-
   ```hcl
     module "main" {
       source = "github.com/{{ cookiecutter.repository_owner }}/{{ cookiecutter.repository_name }}"
-
-      name        = "repository-example"
-
+      name   = "repository-example"
     }
 
   ```
 
-  Full working example can be found in [example](./example) folder.
+  Full working examples can be found in [examples](./examples) folder.
 
 examples:
   - 'docs/examples/common.md'
